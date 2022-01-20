@@ -19,11 +19,11 @@ for (item of buttons) {
         else if (buttonText == '=') {
             screen.value = eval(screenValue);
         }
-        else if(buttonText=='Del'){
-          var number=screen.value;
-          var len=number.length-1;
-          var newnumber=number.substring(0,len);
-          screen.value=newnumber;
+        else if(buttonText == 'Del'){
+            backspace = screen.value;
+            restNum = backspace.slice(0,-1);
+            screenValue = restNum;
+            screen.value = screenValue;
         }
         else {
             screenValue += buttonText;
