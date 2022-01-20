@@ -19,7 +19,7 @@ for (item of buttons) {
         else if (buttonText == '=') {
             screen.value = eval(screenValue);
         }
-        else if(buttonText == 'DEL'){
+        else if(buttonText == 'Del'){
             backspace = screen.value;
             restNum = backspace.slice(0,-1);
             screenValue = restNum;
