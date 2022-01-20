@@ -19,6 +19,12 @@ for (item of buttons) {
         else if (buttonText == '=') {
             screen.value = eval(screenValue);
         }
+        else if(buttonText=='Del'){
+          var number=screen.value;
+          var len=number.length-1;
+          var newnumber=number.substring(0,len);
+          screen.value=newnumber;
+        }
         else {
             screenValue += buttonText;
             screen.value = screenValue;
